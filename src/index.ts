@@ -1,11 +1,11 @@
-import { ModifiedDataTypes } from './types.d'
+import { ModifiedDataTypes } from '../types.d'
 import express from 'express'
 import cors from 'cors'
 import GetPocket from './getPocket'
 import { PrismaClient, Prisma } from '@prisma/client'
 import { Resend } from 'resend'
 import dotenv from 'dotenv'
-import { PocketParams } from './types'
+import { PocketParams } from '../types'
 
 // Prisma and Resend initialization
 const prisma = new PrismaClient()
